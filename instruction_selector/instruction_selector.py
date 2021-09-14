@@ -14,7 +14,7 @@ def instructionSelector(instruction: str) -> str:
     print(LWISelected(instruction))
 
   elif instruction[0].upper() == "LW":
-    #Expected format: LWI Rd lit16
+    #Expected format: LW Rd Rt lit12
     print(LWSelected(instruction))
     
   else:
