@@ -1,4 +1,4 @@
-from format_validator import FormatValidator
+from validation.format_validator import FormatValidator
 from I_instructions.LW import LW
 
 def LWSelected(instruction: list[str]) -> str:
