@@ -1,3 +1,5 @@
+from utils.functions import Functions
+
 class LWI:
   opCodeBits = ""
   rdBits = ""
@@ -17,4 +19,4 @@ class LWI:
 
   def showProgramMem(self) -> str:
     print("Op code | Rd | lit16 -> Format:", self.format)
-    return str(self.opCodeBits + " | " + self.rdBits + " | " + self.lit16Bits)
+    return str(self.opCodeBits + " | " + self.rdBits + " | " + Functions.spacesBetweenBits(self.lit16Bits, 4))
